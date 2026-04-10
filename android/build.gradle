@@ -1,0 +1,15 @@
+// Plugin versions are declared in settings.gradle via pluginManagement.
+// Do NOT add a buildscript {} block here — it conflicts with the new
+// Flutter/Gradle plugin management system used in settings.gradle.
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+tasks.register("clean", Delete) {
+    delete rootProject.buildDir
+}
+
