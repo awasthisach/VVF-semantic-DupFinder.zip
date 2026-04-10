@@ -1,0 +1,62 @@
+name: semantic_file_finder
+description: AI-Driven Semantic Duplicate File Finder & Sorter
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.3.0 <4.0.0"
+  flutter: ">=3.19.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # ── State Management ──────────────────────────────────
+  flutter_bloc: ^8.1.5
+  equatable: ^2.0.5
+  get_it: ^7.6.7
+
+  # ── Google Drive & Auth ───────────────────────────────
+  google_sign_in: ^6.2.1
+  googleapis: ^13.1.0
+  googleapis_auth: ^1.6.0
+  http: ^1.2.1
+
+  # ── File Handling ─────────────────────────────────────
+  file_picker: ^8.0.3
+  path_provider: ^2.1.2
+  path: ^1.9.0
+  permission_handler: ^11.3.0
+
+  # ── Document Parsing ──────────────────────────────────
+  syncfusion_flutter_pdf: ^25.1.38
+  docx_to_text: ^1.0.1
+
+  # ── On-Device AI ──────────────────────────────────────
+  tflite_flutter: ^0.12.1
+  ffi: ^2.1.2
+
+  # ── UI ────────────────────────────────────────────────
+  flutter_animate: ^4.5.0
+  intl: ^0.19.0
+
+  # ── Utils ─────────────────────────────────────────────
+  shared_preferences: ^2.2.3
+  crypto: ^3.0.3
+  uuid: ^4.4.0
+  logger: ^2.3.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  integration_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+  bloc_test: ^9.1.7
+  mockito: ^5.4.4
+  build_runner: ^2.4.9
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/models/
+
